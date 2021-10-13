@@ -1,0 +1,54 @@
+/* 
+Display: Flex ->
+-Default to display:flex instead of inline-block
+-Remember to flex the 'parent'. 
+-You are putting that property on its 'parent'
+-With display: flex you want to look at the html and identify
+what you want to flex. Identify its parent and flex the parent.
+If there is no parent, then you have to make one
+*/
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightblue;
+    padding: 5px 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+h1{
+    color: green;
+}
+
+/* Default to min-height */
+.child{
+    background-color: aqua;
+    width: 200px;
+    min-height: 200px;
+}
+
+.parent{
+    /* For display:flex, the first three properties below  
+    are what you need to use. (Display:Flex, Justify-Content,
+    and Align-items*/
+    /* When we flex an element it become a flex container. */
+    /* It's children become Flex items */
+    /* The blue boxes are flex items and the background burlywood color is
+    the flex container */
+    display: flex;
+
+    /* Needs property to govern alignment horizontally */
+    justify-content: space-evenly;
+
+    /* Needs property to govern alignment vertically */
+    align-items: center;
+    gap: 20px;
+    background-color: burlywood;
+    min-height: 400px;
+}

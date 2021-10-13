@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav element is an html5 semantic tag -->
+    <nav>
+        <h1>Display Flex</h1>
+        <!-- If you want the li's to be beside each other, look at its parent and 
+        add display flex to the ul -->
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Content</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <!-- To wrap with the parent, highlight the two
+    children divs, go to command pallete in view (cmd+shift+p), emmet abbreviation,
+    type .parent and press enter -->
+    <div class="parent">
+        <!-- .child*2 --- will give you the divs below with a class -->
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <!-- #hello*1 --- will give you the div with a id -->
+    <div id="hello"></div>
+</body>
+</html>
